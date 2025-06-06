@@ -3,3 +3,41 @@
     padding: 0px;
     box-sizing: border-box;
 }
+:root{
+    --menu-color: #1b4c88;
+    --header-color: #2864ae;
+}
+img{
+    width: 50px;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: 270px 1fr;
+    grid-template-rows: 119px auto 50px;
+}
+header{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-color: orange;/*-------TEMPORARIO*/
+    padding: 16px 0px;
+}
+main{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: greenyellow;/*-------TEMPORARIO*/
+
+}
+aside{
+    background-color: purple;/*-------TEMPORARIO*/
+    grid-column: 1/2;
+    grid-row: 2/4;
+    overflow: hidden;
+}
+footer{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background-color: brown;/*-------TEMPORARIO*/
+}
