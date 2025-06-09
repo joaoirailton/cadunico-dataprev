@@ -59,11 +59,10 @@ div#imagem-logo img{
 }
 div#titulo-logo h1{
     font-size: 20px;
-    margin: 5px 0px;
+    margin: 4px 0px;
     font-weight: 100;
 }
 div#titulo-logo p{
-    font-weight: bold;
     font-size: 15px;
 }
 ul#list-header{
@@ -92,11 +91,27 @@ section#box2-header{
     padding-bottom: 5px;
 }
 i#icone-menu{
-    font-size: 18px;
+    font-size: 16px;
     margin-left: 10px;
 }
+span#menu{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+span#menu:hover aside{/*----------------------------*/
+    background-color: #ffffff2e;
+    width: 270px;
+}
+/*span#menu: aside{
+    width: 270px;
+}*/
 section#box2-header h3{
-    font-size: 15px;
+    font-size: 14px;
 }
 i#foto-usuario{
     font-size: 2em;
@@ -104,7 +119,7 @@ i#foto-usuario{
 main{
     grid-column: 2/3;
     grid-row: 2/3;
-    background-color: rgb(234, 234, 234);
+    background-color: white;
 }
 main iframe{
     width: 100%;
@@ -118,6 +133,7 @@ aside{
     overflow: hidden;
     box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.788);
     z-index: 1;
+    border: 1px solid rgba(255, 255, 255, 0.299);
 }
 aside ul{
     list-style-type: none;
@@ -134,22 +150,27 @@ aside a{
     font-size: 13px;
 }
 aside li{
-    border: 1px solid rgba(255, 255, 255, 0.195);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.253);
+}
+aside a:hover{
+    background-color: #163b6b;
+    transition: 0.3s;
 }
 .conteudo-extra{
     height: 0px;
     overflow: hidden;
 }
 .conteudo-extra li{
-    margin-left: 34px;
     border: none;
+}
+.conteudo-extra a{
+    padding-left: 58px;
 }
 aside a:focus + ul.conteudo-extra{
     height: 100%;
 }
-aside a:hover .icon-seta{
+aside a:focus .icon-seta{
     transform: rotate(180deg);
-    transition: 0.1s;
 }
 div.li-pirncipal{
     display: flex;
