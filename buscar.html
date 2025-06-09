@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Buscar</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 30px;
+        }
+        main{
+            
+        }
+        section#header{
+            margin-bottom: 12px;
+        }
+        ul#caminho{
+            list-style-type: none;
+            display: flex;
+            font-size: 13px;
+        }
+        ul#caminho li{
+            margin: 10px;
+        }
+        ul#caminho i{
+            color: #2864ae;
+        }
+        h1{
+            margin: 20px 10px;
+        }
+        h1 i{
+            margin-right: 15px;
+        }
+        ul#opcoes-buscas{
+            list-style-type: none;
+            display: flex;
+            justify-content: space-evenly;
+            font-style: italic;
+            font-size: 13px;
+            border-bottom: 2px solid rgb(170, 168, 168);
+        }
+        ul#opcoes-buscas li{
+        padding: 6px 52px;
+        }
+        .ativado{
+            border-bottom: 3px solid #2864ae;
+        }
+        .t-busca{
+            border-top: 2px solid rgb(189, 188, 188);
+            border-bottom: 2px solid rgb(179, 177, 177);
+            padding: 1em;
+        }
+        .t-busca a{
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .t-busca a > i{
+            margin-right: 1em;
+        }
+        div#box-formulario{
+            background-color: rgb(235, 234, 234);
+            padding: 35px;
+            margin: 10px 0px;
+            border-radius: 6px;
+            box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.208);
+        }
+        form{
+            display: flex;
+            background-color: rgba(165, 42, 42, 0.273);
+        }
+        div#select-busca{
+            display: flex;
+            flex-direction: column;
+            margin-right: 300px;
+        }
+        button{
+            font-weight: bold;
+            padding: 8px 22px;
+            border-radius: 30px;
+            border: 2px solid #2864ae;
+            color: #2864ae;
+        }
+        .btn-destaque{
+            background-color: #2864ae;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="header">
+            <ul id="caminho">
+                <li><i class="fa-solid fa-house-chimney"></i></li>
+                <li>Familias</li>
+                <li>buscar</li>
+            </ul>
+            <h1><i class="fa-solid fa-users icon-aside"></i>Buscar família</h1>
+            <ul id="opcoes-buscas">
+                <li class="ativado">Buscar família</li>
+                <li>Famílias / Pessoas em cadastramento</li>
+                <li>Famílias sem registro civil</li>
+                <li>Famílias com indicação de RL</li>
+                <li>Pessoas aguardando CPF</li>
+            </ul>
+        </section>
+        <section id="container">
+            <div class="t-busca">
+                <a href="#"><i class="fa-solid fa-angle-down icon-seta"></i>Buscar por CPF ou Código familiar</a>
+            </div>
+            <div id="box-formulario">
+                <form>
+                    <div id="select-busca">
+                        <label for="tipo-busca">Tipo de Busca</label>
+                        <input type="radio" name="tipo-busca" id="cpf" value="cpf">
+                        <label for="tipo-busca">CPF</label>
+                        <input type="radio" name="tipo-busca" id="codigo-familiar" value="codigo-familiar">
+                        <label for="tipo-busca">Cófigo familiar</label>
+                    </div>
+                    <div id="numero">
+                        <label for="numero">Número</label>
+                        <input type="text" name="numero" id="numero">
+                    </div>
+                </form>
+                <div>
+                    <button class="btn-destaque">Buscar</button>
+                    <button>Limpar</button>
+                </div>
+            </div>
+            <div class="t-busca">
+                <a href="#"><i class="fa-solid fa-angle-down icon-seta"></i>Buscar por integrante da família</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
