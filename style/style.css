@@ -144,7 +144,7 @@ aside li{
     margin-left: 34px;
     border: none;
 }
-aside a:hover + ul.conteudo-extra{
+aside a:focus + ul.conteudo-extra{
     height: 100%;
 }
 aside a:hover .icon-seta{
