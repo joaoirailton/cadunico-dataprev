@@ -126,15 +126,34 @@ aside ul{
 aside a{
     color: white;
     text-decoration: none;
-}
-aside li{
-    border: 1px solid rgba(255, 255, 255, 0.195);
     padding: 20px 26px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     font-weight: bold;
     font-size: 13px;
-
+}
+aside li{
+    border: 1px solid rgba(255, 255, 255, 0.195);
+}
+.conteudo-extra{
+    height: 0px;
+    overflow: hidden;
+}
+.conteudo-extra li{
+    margin-left: 34px;
+    border: none;
+}
+aside a:hover + ul.conteudo-extra{
+    height: 100%;
+}
+aside a:hover .icon-seta{
+    transform: rotate(180deg);
+    transition: 0.1s;
+}
+div.li-pirncipal{
+    display: flex;
+    justify-content: space-between;
 }
 .icon-aside{
     margin-right: 10px;
