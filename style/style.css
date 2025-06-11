@@ -97,21 +97,22 @@ i#icone-menu{
 span#menu{
     width: 32px;
     height: 32px;
-    display: flex;
-    text-align: center;
-    align-items: center;
     border-radius: 50%;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-span#menu:hover aside{/*----------------------------*/
+#menu i{
+    margin: 0px;
+}
+span#menu:hover{
     background-color: #ffffff2e;
-    width: 270px;
 }
-/*span#menu: aside{
-    width: 270px;
-}*/
+
 section#box2-header h3{
     font-size: 14px;
+    margin-top: 9px;
 }
 i#foto-usuario{
     font-size: 2em;
