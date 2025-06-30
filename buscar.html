@@ -83,7 +83,7 @@
             margin-right: 1em;
         }
         div#box-formulario{
-            background-color: rgb(235, 234, 234);
+            background-color: rgb(255, 255, 255);
             padding: 35px;
             margin: 10px 0px;
             border-radius: 6px;
@@ -91,12 +91,12 @@
         }
         form{
             display: flex;
-            background-color: rgba(165, 42, 42, 0.273);
         }
         div#select-busca{
-            display: flex;
-            flex-direction: column;
             margin-right: 300px;
+        }
+        #select-busca div{
+            margin: 20px 0px;
         }
         button{
             font-weight: bold;
@@ -104,6 +104,9 @@
             border-radius: 30px;
             border: 2px solid #2864ae;
             color: #2864ae;
+        }
+        input[type='radio']{
+            
         }
         .btn-destaque{
             background-color: #2864ae;
@@ -136,10 +139,12 @@
                 <form>
                     <div id="select-busca">
                         <label for="tipo-busca">Tipo de Busca</label>
-                        <input type="radio" name="tipo-busca" id="cpf" value="cpf">
-                        <label for="tipo-busca">CPF</label>
-                        <input type="radio" name="tipo-busca" id="codigo-familiar" value="codigo-familiar">
-                        <label for="tipo-busca">Cófigo familiar</label>
+                        <div>
+                            <input type="radio" name="tipo-busca" id="cpf" value="cpf">
+                            <label for="tipo-busca">CPF</label>
+                            <input type="radio" name="tipo-busca" id="codigo-familiar" value="codigo-familiar">
+                            <label for="tipo-busca">Cófigo familiar</label>
+                        </div>
                     </div>
                     <div id="numero">
                         <label for="numero">Número</label>
