@@ -9,5 +9,5 @@ for (let indice = 0; indice <= abaBuscar.length; indice ++){
 
 //FUNÇÕES
 function abriFecha(indice){
-    formulario.classList.toggle('ativo');
+    formulario.classList.toggle('ativo');    
 }

@@ -71,6 +71,7 @@ ul#list-header{
     gap: 26px;
     margin: 0px 15px;
     align-items: center;
+    
 }
 ul#list-header::after{
     content: "";
@@ -149,13 +150,16 @@ aside a{
     justify-content: space-between;
     font-weight: bold;
     font-size: 13px;
+    
 }
 aside li{
     border-bottom: 1px solid rgba(255, 255, 255, 0.253);
+    
 }
 aside a:hover{
     background-color: #163b6b;
     transition: 0.3s;
+    
 }
 .conteudo-extra{
     height: 0px;
@@ -167,12 +171,12 @@ aside a:hover{
 .conteudo-extra a{
     padding-left: 58px;
 }
-aside a:focus + ul.conteudo-extra{
+/*aside a:focus + ul.conteudo-extra{
     height: 100%;
 }
 aside a:focus .icon-seta{
     transform: rotate(180deg);
-}
+}*/
 div.li-pirncipal{
     display: flex;
     justify-content: space-between;

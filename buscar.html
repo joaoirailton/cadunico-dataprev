@@ -63,6 +63,7 @@
             align-items: center;
             padding: 4px 52px;
             width: 50%;
+            transition: .2s;
         }
         ul#opcoes-buscas li:hover{
             background-color: #dbe8f9;
@@ -75,16 +76,15 @@
             border-top: 1px solid rgb(189, 188, 188);
             border-bottom: 1px solid rgb(179, 177, 177);
             padding: 28px;
+            cursor: pointer;
+            font-size: 20px;
+            color: rgb(47, 47, 47);
         }
-        .t-busca a{
-            color: black;
-            text-decoration: none;
-            font-weight: bold;
-        }
+        
         .t-busca a > i{
             margin-right: 1em;
         }
-        div#box-formulario{
+        #box-formulario{
             background-color: rgb(255, 255, 255);
             padding: 0px;
             margin: 10px 0px;
@@ -92,8 +92,9 @@
             box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.208);
             overflow: hidden;
             height: 0px;
+            
         }
-        .ativo{
+        #box-formulario.ativo{
             height: 200px;
             padding: 35px;
         }
@@ -120,6 +121,7 @@
             color: #2864ae;
             font-size: 17px;
         }
+        
         #numero-busca{
             display: flex;
             flex-direction: column;
@@ -154,9 +156,9 @@
                 <li>Pessoas aguardando CPF</li>
             </ul>
         </section>
-        <section id="container">
+        <section id="container" name="buscar-familia">
             <div class="t-busca">
-                <a href="#"><i class="fa-solid fa-angle-down icon-seta"></i>Buscar por CPF ou Código familiar</a>
+                <span><i class="fa-solid fa-angle-down icon-seta"></i>Buscar por CPF ou Código familiar</span>
             </div>
             <div id="box-formulario">
                 <form>
@@ -184,9 +186,13 @@
                 </div>
             </div>
             <div class="t-busca">
-                <a href="#"><i class="fa-solid fa-angle-down icon-seta"></i>Buscar por integrante da família</a>
+                <span><i class="fa-solid fa-angle-down icon-seta"></i>Buscar por integrante da família</span>
             </div>
         </section>
+        <section name="familias-cadastramento">
+
+        </section>
+        
     </main>
     <script src="javascript/script-page-buscar.js"></script>
 </body>
