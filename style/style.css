@@ -132,10 +132,19 @@ aside{
     background-color: var(--menu-color);
     grid-column: 1/2;
     grid-row: 2/4;
-    overflow: hidden;
+    overflow: auto;
     box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.788);
     z-index: 1;
     border: 1px solid rgba(255, 255, 255, 0.299);
+}
+.menu-scroll::-webkit-scrollbar{
+    
+    width: 13px;
+    height: 100%;
+    background-color: rgb(46, 114, 250);
+}
+.menu-scroll::-webkit-scrollbar-thumb{
+    background-color: var(--menu-color);
 }
 aside ul{
     list-style-type: none;
@@ -165,18 +174,16 @@ aside a:hover{
     height: 0px;
     overflow: hidden;
 }
+.ativo{
+    height: 100%
+}
 .conteudo-extra li{
     border: none;
 }
 .conteudo-extra a{
     padding-left: 58px;
 }
-/*aside a:focus + ul.conteudo-extra{
-    height: 100%;
-}
-aside a:focus .icon-seta{
-    transform: rotate(180deg);
-}*/
+
 div.li-pirncipal{
     display: flex;
     justify-content: space-between;
