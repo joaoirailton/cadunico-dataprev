@@ -1,13 +1,22 @@
 //DECLARAÇÃO DE CONSTANTES
-const abaBuscar = document.querySelectorAll('.t-busca');
-const formulario = document.querySelector('#box-formulario');
+const abaBuscar = document.querySelectorAll('.t-forms');
+const boxContent = document.querySelectorAll('.box-content-form');
+const campoBusca = document.getElementById('numero');
+let inforBusca = campoBusca.value
+const btns = document.querySelectorAll('.btn-destaque');
 
 //ADICIONA EVENTO
-for (let indice = 0; indice <= abaBuscar.length; indice ++){
-    abaBuscar[indice].addEventListener('click', () => abriFecha(indice));
-}
+abaBuscar.forEach((aba, i)=>{
+    aba.addEventListener('click', () => {
+        boxContent[i].classList.toggle('ativo');
+    })
+})
 
-//FUNÇÕES
-function abriFecha(indice){
-    formulario.classList.toggle('ativo');    
+//CONDIÇÕES OBRIGATÓRIAS
+if (inforBusca.value === ''){
+btns.forEach((btn, i)=>{
+    btn.disabled = true
+})
+}else{
+    
 }
