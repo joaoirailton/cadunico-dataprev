@@ -13,7 +13,6 @@ abaBuscar.forEach((aba, i)=>{
 })
 
 //CONDIÇÕES OBRIGATÓRIAS
-
 btns.forEach((btn, i)=>{
     btn.disabled = true
 })
